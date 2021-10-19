@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
-import useDataAndAuth from "../Context/useDataAndAuth";
+
 
 const ServicesDetais = () => {
   const [matchService, setMatchService] = useState({});

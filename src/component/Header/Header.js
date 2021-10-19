@@ -14,7 +14,7 @@ const Header = () => {
           <Navbar.Brand
             style={{ color: "#0262AC" }}
             className="fs-4   fw-bolder"
-            href="#home"
+            
           >
             <img className="mx-1 pb-2 my-auto" src={logo} width="40px" alt="" />
             SHIMLA HOSPITAL

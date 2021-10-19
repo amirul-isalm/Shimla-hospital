@@ -15,24 +15,24 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [newUser, setnewUser] = useState(false);
 
- const location = useLocation();
- const history = useHistory();
- const Redirect_url = location.state?.from || "/home";
+  const location = useLocation();
+  const history = useHistory();
+  const Redirect_url = location.state?.from || "/home";
 
   // import useauth data from  context api
 
   const { usefirebaseByContext } = useDataAndAuth();
   const {
-    user,
+
     setError,
     setUser,
     error,
     googleSignIn,
-    logOut,
+   
     createaccountUsingpass,
     updateData,
     loginUserUsingEmailPass,
-    setIsLoading
+    setIsLoading,
   } = usefirebaseByContext;
 
   // click google button
@@ -41,7 +41,7 @@ const Login = () => {
     googleSignIn()
       .then((result) => {
         setUser(result.user);
-       setIsLoading(false);
+        setIsLoading(false);
         setError("Login successfully");
 
         history.push(Redirect_url);
@@ -49,7 +49,7 @@ const Login = () => {
       .catch((error) => {
         setError(error.message);
       });
-  }
+  };
 
   // set input field value
   const nameFildValue = (e) => {
@@ -75,9 +75,15 @@ const Login = () => {
     e.preventDefault();
 
     if (testPass === confirmPass) {
-      setPassword(testPass);
+      if (testPass.length > 5) {
+        setPassword(testPass);
+      } else {
+        setError("Password Should be atlest 6 charectar.");
+        return;
+      }
     } else {
       setError("Password doesn't match..");
+      return;
     }
 
     if (newUser) {
@@ -88,9 +94,8 @@ const Login = () => {
           setError("Sign Up successfully");
         })
         .catch((error) => {
-          setError(error.message);
+          setError("Invalid Email Or password");
         });
-     
     } else {
       loginUserUsingEmailPass(email, password)
         .then((result) => {
@@ -100,9 +105,8 @@ const Login = () => {
           history.push(Redirect_url);
         })
         .catch((error) => {
-          setError(error.message);
+         setError("Invalid Email Or password")
         });
-
     }
   };
 

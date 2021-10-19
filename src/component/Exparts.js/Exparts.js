@@ -4,7 +4,7 @@ import ExpartCart from './ExpartCart';
 
 const Exparts = () => {
     const { exparts } = useDataAndAuth()
-    console.log(exparts)
+    
     return (
       <div className="row w-75  mx-auto">
         <h1 className="text-info fw-bold pt-4  pb-2">Our Experts</h1>

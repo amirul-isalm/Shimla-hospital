@@ -4,7 +4,7 @@ import BlogCart from "./BlogCart";
 
 const Blogs = () => {
   const { blogs } = useDataAndAuth();
-  console.log(blogs);
+ 
 
   return (
     <div className="row my-5 ">

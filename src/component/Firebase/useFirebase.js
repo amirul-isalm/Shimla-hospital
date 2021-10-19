@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import FirebaseInit from "./Firebase.init";
 import {
   getAuth,
@@ -60,9 +60,7 @@ const useFirebase = () => {
       .catch((error) => {
         setError(error.message);
       })
-      .finally(() => {
-      setIsLoading(false);
-    })
+      .finally(() => setIsLoading(false));
   };
 
   // any auth change
@@ -70,9 +68,9 @@ const useFirebase = () => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
         setUser(user);
-        setIsLoading(false);
-      } else {
+        
       }
+      setIsLoading(false);
     });
   }, []);
 
