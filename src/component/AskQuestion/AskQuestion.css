@@ -1,0 +1,11 @@
+.askqsn{
+    
+}
+.askqsn input{
+display: block;
+width: 100%;
+font-size: larger;
+padding: 5px;
+margin: 10px auto;
+border: transparent;
+}

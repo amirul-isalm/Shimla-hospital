@@ -1,0 +1,35 @@
+.login-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: skyblue;
+   
+}
+.login-form img{
+    width: 350px;
+}
+.submitbtn{
+    font-size: 1.1rem;
+    padding: 8px 150px;
+    border-radius: 5px;
+    background-color: purple;
+    color: white;
+    font-weight: 700;
+}
+.google{
+    font-size: 1.1rem;
+    padding: 5px 30px;
+    border-radius: 5px;
+    background-color: rgba(218, 165, 32, 0.205);
+    color: purple;
+    margin: 5px auto;
+        font-weight: 700;
+       
+
+
+}
+.mainForom{
+     box-shadow: 1px 1px 16px 1px  black;
+     padding:35px 25px ;
+     border-radius: 5px;
+}

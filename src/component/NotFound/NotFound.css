@@ -1,0 +1,16 @@
+.notFound{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: purple;
+    font-weight:700;
+}
+.backHome{
+    background-image: linear-gradient(rgb(240, 146, 240), rgb(63, 27, 182));
+    padding: 5px 25px;
+    width: 25%;
+    border-radius: 10px;
+    color: white;
+}

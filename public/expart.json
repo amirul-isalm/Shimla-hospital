@@ -1,0 +1,23 @@
+[
+  {
+    "name": "DR. REYAN ANIS",
+    "dgree": "MBBS (DMC), MRCP (UK)",
+    "designation": "Senior Consultant",
+    "image": "https://thumbs.dreamstime.com/b/doctor-square-20888835.jpg",
+    "id": 1
+  },
+  {
+    "name": "DR. MOHAMMAD JAHANGIR TALUKDER",
+    "dgree": "MBBS, MRCP (UK.)",
+    "designation": "Consultant",
+    "image": "https://www.uhlbd.com/backend/web/product_uploads/1471435052_2_Dr%20Jahangir%20Talukder.jpg",
+    "id": 2
+  },
+  {
+    "name": "DR. MIRZA ABUL KALAM MOHIUDDIN",
+    "dgree": "MBBS, MS (CTS)",
+    "designation": "Consultant",
+    "image": "https://www.demo.unitemplates.com/medico/images/hospital/doctor_001.jpg",
+    "id": 3
+  }
+]

@@ -1,0 +1,19 @@
+.serviceCart{
+   
+  border-radius: 10px;
+
+ transition: all 1s;
+ height: 90%;
+}
+.serviceCart button{
+    background-color: transparent;
+    color: purple;
+    padding: 5px 15px;
+    border-radius: 10px;
+   
+    
+}
+.serviceCart:hover{
+    transform: scale(1.05) ;
+     box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.315);
+}

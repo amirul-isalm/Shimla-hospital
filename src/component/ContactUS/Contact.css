@@ -1,0 +1,15 @@
+.top{
+    height: 400px;
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+   
+    
+}
+.top h1{
+    font-size: 7vw;
+    font-weight: 700;
+    color: white;
+
+}

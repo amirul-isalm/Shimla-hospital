@@ -1,0 +1,32 @@
+.banner{
+    background-image: url(./banner.jpg);
+    height: 80vh;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: purple;
+    
+}
+.banner h1{
+   
+    font-size: 6vw;
+    font-weight: 700;
+    
+}
+.banner button{
+    font-size:2.6vw ;
+     background-color: transparent;
+     padding: 5px 30px;
+     border-radius: 30px;
+     color: purple;
+     border: transparent;
+      box-shadow: 1px 1px 5px 2px black;
+      transition: all 1s;
+}
+.banner button:hover{
+    transform: scale(1.05);
+    box-shadow: 1px 1px 5px 2px black;
+}

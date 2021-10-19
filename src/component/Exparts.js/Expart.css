@@ -1,0 +1,9 @@
+.expartCart{
+    box-shadow: 0px 1px 1px 1px gray;
+    padding: 8px;
+    border-radius: 5px;
+    transition: all 1s;
+}
+.expartCart:hover{
+    transform: scale(1.05);
+}
