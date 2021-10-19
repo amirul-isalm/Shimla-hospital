@@ -1,16 +1,18 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import "./Banner.css"
 
 const Banner = () => {
     return (
-      <div  className="banner">
+      <div className="banner">
         <div>
-         
           <h1>
             Hi,
             <br /> Wellcome to Shimla Hospital
           </h1>
-          <button> Contact Us</button>
+          <NavLink to="/contact">
+            <button> Contact Us</button>
+          </NavLink>
         </div>
       </div>
     );
